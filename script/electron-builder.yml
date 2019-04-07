@@ -10,5 +10,4 @@ directories:
 compression: maximum
 
 win:
-  icon: "build/icon.ico"
   target: portable

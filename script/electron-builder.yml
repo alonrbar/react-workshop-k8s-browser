@@ -1,0 +1,14 @@
+appId: com.bar.alon.test
+productName: TestApp
+
+artifactName: "${productName}-${os}-${arch}-${version}.${ext}"
+
+directories:
+  app: .tmp/dist  
+  output: bin
+
+compression: maximum
+
+win:
+  icon: "build/icon.ico"
+  target: portable

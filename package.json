@@ -1,0 +1,32 @@
+{
+  "name": "react-electron",
+  "version": "1.0.0",  
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .tmp/dist/main.js",
+    "dev": "rimraf .tmp/dist && webpack --watch --config ./script/webpack-dev.js --progress --colors",
+    "release": "rimraf .tmp/dist dist bin && webpack --config ./script/webpack-release.js --progress --colors && copy \"./src/package.json\" \".tmp/dist\" && electron-builder --config ./script/electron-builder.yml"
+  },
+  "dependencies": {
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  },
+  "devDependencies": {
+    "@types/react": "16.8.12",
+    "@types/react-dom": "16.8.3",
+    "cross-env": "5.2.0",
+    "css-loader": "2.1.1",
+    "electron": "4.1.4",
+    "electron-builder": "20.39.0",
+    "fork-ts-checker-webpack-plugin": "1.0.1",
+    "html-webpack-plugin": "3.2.0",
+    "rimraf": "2.6.3",
+    "style-loader": "0.23.1",
+    "ts-loader": "5.3.3",
+    "typescript": "3.4.2",
+    "webpack": "4.29.6",
+    "webpack-cli": "3.3.0",
+    "webpack-merge": "4.2.1"
+  }
+}

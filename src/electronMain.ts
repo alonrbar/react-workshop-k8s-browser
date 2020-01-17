@@ -11,7 +11,17 @@ let mainWindow: Electron.BrowserWindow;
 function createWindow() {
 
     // Create the browser window.
-    mainWindow = new BrowserWindow({ width: 800, height: 600 });
+    mainWindow = new BrowserWindow({ 
+        width: 800, 
+        height: 600,
+        webPreferences: {
+            // Note: 
+            // Setting nodeIntegration to true is not recommended in production -
+            // https://stackoverflow.com/questions/55093700/electron-5-0-0-uncaught-referenceerror-require-is-not-defined#58350164
+            nodeIntegration: true,
+            nodeIntegrationInWorker: true
+        } 
+    });
 
     // and load the index.html of the app.
     mainWindow.loadURL(url.format({

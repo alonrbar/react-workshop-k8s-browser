@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export const Hello: React.SFC = () => (
+export const App: React.SFC = () => (
     <div>
         <h1>Hello Electron!</h1>
         <p>

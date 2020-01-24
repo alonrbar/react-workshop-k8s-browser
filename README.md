@@ -1,6 +1,6 @@
-# electron-react
+# k8s-browser
 
-Minimal electron-react-typescript starter project.
+Simple Kubernetes browser. Part of a React workshop.
 
 Develop by running `yarn dev` and then `yarn start` in another console.
 

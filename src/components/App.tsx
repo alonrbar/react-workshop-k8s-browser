@@ -1,12 +1,11 @@
 import * as React from 'react';
+import { ClusterBrowser } from './ClusterBrowser';
 
 export const App: React.SFC = () => (
     <div>
-        <h1>Hello Electron!</h1>
-        <p>
-            We are using Node.js {process.versions.node}, <br />
-            Chromium {process.versions.chrome}, <br />
-            and Electron {process.versions.electron}.
-        </p>
+        <div style={{ margin: '10px auto', width: 700 }}>
+            <h1>My Kubernetes cluster:</h1>
+            <ClusterBrowser />
+        </div>
     </div>
 );

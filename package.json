@@ -1,5 +1,5 @@
 {
-  "name": "k8s-browser",
+  "name": "@react-workshop/k8s-browser",
   "version": "1.0.0",
   "license": "MIT",
   "main": "main.js",
